@@ -76,7 +76,7 @@ Register-ScheduledTask -TaskName "NaukriProfileRefresh" -Action $action -Trigger
 
 - That's it, the script now `refreshes your profile` every hour while your PC is on.
 
-### Useful commands
+> Useful commands
 
 ```powershell
 Get-ScheduledTask NaukriProfileRefresh            # check status
