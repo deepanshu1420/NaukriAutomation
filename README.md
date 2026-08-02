@@ -28,7 +28,7 @@ profile update on Naukri. Schedule it hourly and forget about updating your prof
 - Google Chrome installed
 - A Naukri account that signs in with Google
 
-## Setup & Installation
+## 🛠️ Setup & Installation
 
 ### 1️⃣ Clone the repository & Install the required dependencies
 
@@ -96,7 +96,7 @@ Enable-ScheduledTask NaukriProfileRefresh         # resume
 Unregister-ScheduledTask NaukriProfileRefresh     # remove
 ```
 
-## Troubleshooting
+## 🚨 Troubleshooting
 
 | Symptom | Fix |
 |---|---|
@@ -105,7 +105,7 @@ Unregister-ScheduledTask NaukriProfileRefresh     # remove
 | Any other error | Check `naukri-refresh-error-*.png` screenshots in the repo folder - they show exactly what the browser saw when it failed. |
 | Want to start fresh | Delete the `.naukri-chrome-profile/` folder and run the `login` step again. |
 
-## Disclaimer
+## 📢 Disclaimer
 
 Automating your own profile may be against `Naukri's Terms of Service`. It only
 edits your own headline at a slow, human-like rate, but use at your own risk.
