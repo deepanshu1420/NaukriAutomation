@@ -84,7 +84,7 @@ $trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (Ne
 Register-ScheduledTask -TaskName "NaukriProfileRefresh" -Action $action -Trigger $trigger -Settings (New-ScheduledTaskSettingsSet -StartWhenAvailable)
 ```
 
-- That's it, the script now `refreshes your profile` every hour while your PC is on.
+*That's it, the script now `refreshes your profile` every hour while your PC is on.*
 
 > Useful Commands:
 
@@ -95,6 +95,16 @@ Start-ScheduledTask NaukriProfileRefresh          # run task now
 Disable-ScheduledTask NaukriProfileRefresh        # pause task
 Enable-ScheduledTask NaukriProfileRefresh         # resume task
 Unregister-ScheduledTask NaukriProfileRefresh     # remove task
+```
+
+> Verify in PowerShell: `LastTaskResult : 0` means the last run was successful.
+
+```powershell
+LastRunTime        : 03-08-2026 12:36:06 AM
+LastTaskResult     : 0
+NextRunTime        : 03-08-2026 01:36:05 AM
+NumberOfMissedRuns : 0
+TaskName           : NaukriProfileRefresh
 ```
 
 ## 🚨 Troubleshooting
