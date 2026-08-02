@@ -74,7 +74,7 @@ $trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (Ne
 Register-ScheduledTask -TaskName "NaukriProfileRefresh" -Action $action -Trigger $trigger -Settings (New-ScheduledTaskSettingsSet -StartWhenAvailable)
 ```
 
-- That's it, the script now refreshes your profile every hour while your PC is on.
+- That's it, the script now `refreshes your profile` every hour while your PC is on.
 
 ### Useful commands
 
@@ -97,5 +97,5 @@ Unregister-ScheduledTask NaukriProfileRefresh     # remove
 
 ## Disclaimer
 
-Automating your own profile may be against Naukri's Terms of Service. It only
+Automating your own profile may be against `Naukri's Terms of Service`. It only
 edits your own headline at a slow, human-like rate, but use at your own risk.
