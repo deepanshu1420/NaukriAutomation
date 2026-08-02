@@ -63,7 +63,7 @@ node naukri-profile-refresh.js
 [27/7/2026, 1:05:12 pm] OK: headline dot added (verified) → "Software Developer | ..."
 ```
 
-## Run it hourly (Task Scheduler)
+### 5️⃣ Run it hourly (Task Scheduler)
 
 > Open Windows PowerShell as Administrator, replace `C:\path\to\NaukriAutomation` with the actual path where you cloned the repository, then copy and run the entire command block below.
 
