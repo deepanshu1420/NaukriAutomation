@@ -108,4 +108,4 @@ Unregister-ScheduledTask NaukriProfileRefresh     # remove
 ## 📢 Disclaimer
 
 Automating your own profile may be against `Naukri's Terms of Service`. It only
-edits your own headline at a slow, human-like rate, but use at your own risk.
+edits your own headline at a slow, human-like rate, but use at your own risk. 🚀
