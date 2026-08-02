@@ -34,32 +34,33 @@ npm install
 
 | Variable | What it is ? |
 |---|---|
-| `GOOGLE_EMAIL` | The Google account your Naukri profile uses. |
-| `GOOGLE_PASSWORD` | Its password (used only for the automated sign-in) |
-| `NAUKRI_PROFILE_URL` | Your Naukri profile URL the default `https://www.naukri.com/mnjuser/profile` works for every account. |
-| `NAME` | Your full name (used for configuration validation) |
-| `EMAIL` | Your email address (used for configuration validation) |
+| `GOOGLE_EMAIL` | you@gmail.com |
+| `GOOGLE_PASSWORD` | your-google-password |
+| `NAUKRI_PROFILE_URL` | https://www.naukri.com/mnjuser/profile (works for every account, no need to change) |
+| `NAME` | Your Name |
+| `EMAIL` | you@gmail.com |
 
-### 3️⃣ First login (one time, visible browser)
+### 3️⃣ First Login (One-Time Setup)
 
-```powershell
+> Run the below command in your IDE's terminal (e.g., VS Code):
+
+```bash
 node naukri-profile-refresh.js login
 ```
 
-A Chrome window opens and signs in with Google. If Google asks for 2-step
-verification, approve it once — the session is saved to `.naukri-chrome-profile/`
-and reused by every later run.
+- A Chrome window opens, then signs in with your `Google account`.
+- If prompted, complete Google 2-step verification once. The session is saved to `.naukri-chrome-profile/` for future runs.
 
-### 4️⃣ Test a silent run
+### 4️⃣ Test a Silent Run (Optional)
 
-```powershell
+```bash
 node naukri-profile-refresh.js
 ```
 
-Check `naukri-refresh.log` — you should see a line like:
+> Check `naukri-refresh.log` - you should see a line like:
 
 ```
-[27/7/2026, 1:05:12 pm] OK: headline dot added (verified) → "AI Full Stack Developer | ..."
+[27/7/2026, 1:05:12 pm] OK: headline dot added (verified) → "Software Developer | ..."
 ```
 
 ## Run it hourly (Task Scheduler)
