@@ -76,7 +76,7 @@ Register-ScheduledTask -TaskName "NaukriProfileRefresh" -Action $action -Trigger
 
 - That's it, the script now refreshes your profile every hour while your PC is on.
 
-#### Useful commands
+### Useful commands
 
 ```powershell
 Get-ScheduledTask NaukriProfileRefresh            # check status
@@ -91,19 +91,9 @@ Unregister-ScheduledTask NaukriProfileRefresh     # remove
 | Symptom | Fix |
 |---|---|
 | `Google login did not complete` in the log | Run `node naukri-profile-refresh.js login` and approve the 2-step verification prompt once manually. |
-| `save did not stick` in the log | Naukri changed its headline editor — open an issue. |
-| Any other error | Check `naukri-refresh-error-*.png` screenshots in the repo folder — they show exactly what the browser saw when it failed. |
+| `save did not stick` in the log | Naukri changed its headline editor - open an issue. |
+| Any other error | Check `naukri-refresh-error-*.png` screenshots in the repo folder - they show exactly what the browser saw when it failed. |
 | Want to start fresh | Delete the `.naukri-chrome-profile/` folder and run the `login` step again. |
-
-## Files
-
-| File | Purpose |
-|---|---|
-| `naukri-profile-refresh.js` | The refresh script |
-| `config.js` | Loads `.env` (no dependencies) |
-| `.env.example` | Template — copy to `.env` and fill in |
-| `naukri-refresh.log` | Run history (git-ignored) |
-| `.naukri-chrome-profile/` | Saved Chrome session (git-ignored) |
 
 ## Disclaimer
 
