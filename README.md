@@ -4,19 +4,21 @@ Keeps your Naukri profile "recently updated" - recruiters see fresh profiles fir
 Every run it toggles a trailing `.` on your **resume headline**, which counts as a
 profile update on Naukri. Schedule it hourly and forget about it.
 
+> Important Details:
+
 - Logs in automatically with your **Google account** (session is saved after the first login).
 - Runs in an off-screen Chrome window (Naukri blocks headless browsers).
 - Verifies the save actually stuck on the server before reporting success.
 - All personal data lives in `.env` - nothing sensitive is in the code.
 
-## Requirements
+> Requirements:
 
 - Windows 10/11 (uses `Task Scheduler` for the hourly run)
 - Node.js v18+
 - Google Chrome installed
 - A Naukri account that signs in with Google
 
-## Setup
+## Setup & Installation
 
 ### 1️⃣ Clone and install
 
@@ -26,21 +28,17 @@ cd NaukriAutomation
 npm install
 ```
 
-### 2️⃣ Create your `.env`
-
-```powershell
-copy .env.example .env
-```
-
-Open `.env` and fill in at least:
+### 2️⃣ Open the `.env.example` file, fill in the required details below, then rename it to `.env`.
 
 | Variable | What it is |
 |---|---|
 | `GOOGLE_EMAIL` | The Google account your Naukri profile uses |
 | `GOOGLE_PASSWORD` | Its password (used only for the automated sign-in) |
-| `NAUKRI_PROFILE_URL` | Your Naukri profile page — the default `https://www.naukri.com/mnjuser/profile` works for every account |
+| `NAUKRI_PROFILE_URL` | Your Naukri profile URL the default `https://www.naukri.com/mnjuser/profile` works for every account |
+| `NAME` | Your full name (used for configuration validation) |
+| `EMAIL` | Your email address (used for configuration validation) |
 
-`.env` is git-ignored, so your credentials never get pushed.
+> `.env` is git-ignored, so your credentials never get pushed.
 
 ### 3️⃣ First login (one time, visible browser)
 
