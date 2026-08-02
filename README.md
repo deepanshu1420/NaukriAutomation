@@ -1,4 +1,4 @@
-# Naukri Profile Refresh
+# Naukri Automation
 
 Keeps your Naukri profile `recently updated` - recruiters see fresh profiles first.
 Every run it toggles a trailing `.` on your **resume headline**, which counts as a
