@@ -57,7 +57,7 @@ node naukri-profile-refresh.js login
 node naukri-profile-refresh.js
 ```
 
-> Check `naukri-refresh.log` - you should see a line like:
+> Check your terminal or `naukri-refresh.log` - you should see a line like:
 
 ```
 [27/7/2026, 1:05:12 pm] OK: headline dot added (verified) → "Software Developer | ..."
@@ -65,10 +65,10 @@ node naukri-profile-refresh.js
 
 ## Run it hourly (Task Scheduler)
 
-Run this once in PowerShell (adjust the path to where you cloned the repo):
+> Open Windows PowerShell as Administrator, replace C:\path\to\NaukriAutomation with the actual path where you cloned the repository, then copy and run the entire command block below.
 
 ```powershell
-$repo = "C:\path\to\auto-apply"
+$repo = "C:\path\to\NaukriAutomation"
 $action  = New-ScheduledTaskAction -Execute "node.exe" -Argument "`"$repo\naukri-profile-refresh.js`"" -WorkingDirectory $repo
 $trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Hours 1)
 Register-ScheduledTask -TaskName "NaukriProfileRefresh" -Action $action -Trigger $trigger -Settings (New-ScheduledTaskSettingsSet -StartWhenAvailable)
