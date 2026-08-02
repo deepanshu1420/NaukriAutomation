@@ -103,7 +103,7 @@ Unregister-ScheduledTask NaukriProfileRefresh     # remove task
 |---|---|
 | `Google login did not complete` in the log | Run `node naukri-profile-refresh.js login` in your terminal and approve the 2-step verification prompt once manually. |
 | `save did not stick` in the log | Naukri changed its headline editor - open an issue. |
-| Any other error | Check `naukri-refresh-error-*.png` screenshots in the repo folder - they show exactly what the browser saw when it failed. |
+| Any other error | Check `naukri-refresh-error-*.png` screenshots in the repo folder - it shows exactly what the browser saw when it failed. |
 | Want to start fresh | Delete the `.naukri-chrome-profile/` folder and run the `login` step again. |
 
 ## 📢 Disclaimer
