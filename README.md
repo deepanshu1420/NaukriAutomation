@@ -1,8 +1,6 @@
 # Naukri Automation
 
-Keeps your Naukri profile `recently updated` - recruiters see fresh profiles first.
-Every run it toggles a trailing `.` on your **resume headline**, which counts as a
-profile update on Naukri. Schedule it hourly and forget about it.
+Keeps your `Naukri profile recently` updated so recruiters see fresh profiles first. Every run it toggles a trailing `.` on your resume headline, which counts as a profile update on Naukri. Schedule it hourly and forget about updating your profile every day.
 
 > Important Details:
 
