@@ -1,13 +1,14 @@
 # ⏳ Naukri Automation
 
 ![Node.js](https://img.shields.io/badge/Node.js-v20+-339933?style=flat&logo=node.js&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-v1.55-2EAD33?style=flat&logo=playwright&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-v1.55-FF4FA3?style=flat&logo=playwright&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES2023-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![PowerShell](https://img.shields.io/badge/PowerShell-7+-5391FE?style=flat&logo=powershell&logoColor=white)
-![Google Auth](https://img.shields.io/badge/Google_Auth-4285F4?style=flat&logo=google&logoColor=white)
+![Google Auth](https://img.shields.io/badge/Google_Auth-F44336?style=flat&logo=google&logoColor=white)
 ![dotenv](https://img.shields.io/badge/dotenv-v17-ECD53F?style=flat&logo=dotenv&logoColor=black)
 ![Task Scheduler](https://img.shields.io/badge/Task_Scheduler-Windows-D83B01?style=flat&logo=windows&logoColor=white)
 ![Naukri](https://img.shields.io/badge/Naukri-Automation-8E44AD?style=flat)
+![Git](https://img.shields.io/badge/Git-v2-F05032?style=flat&logo=git&logoColor=white)
 
 Keeps your Naukri profile `recently updated` - recruiters see fresh profiles first.
 Every run it toggles a trailing `.` on your **resume headline**, which counts as a
