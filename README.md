@@ -89,11 +89,12 @@ Register-ScheduledTask -TaskName "NaukriProfileRefresh" -Action $action -Trigger
 > Useful Commands:
 
 ```powershell
-Get-ScheduledTask NaukriProfileRefresh            # check status
-Start-ScheduledTask NaukriProfileRefresh          # run now
-Disable-ScheduledTask NaukriProfileRefresh        # pause
-Enable-ScheduledTask NaukriProfileRefresh         # resume
-Unregister-ScheduledTask NaukriProfileRefresh     # remove
+Get-ScheduledTaskInfo NaukriProfileRefresh        # check last run status
+Get-ScheduledTask NaukriProfileRefresh            # view task
+Start-ScheduledTask NaukriProfileRefresh          # run task now
+Disable-ScheduledTask NaukriProfileRefresh        # pause task
+Enable-ScheduledTask NaukriProfileRefresh         # resume task
+Unregister-ScheduledTask NaukriProfileRefresh     # remove task
 ```
 
 ## 🚨 Troubleshooting
