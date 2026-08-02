@@ -99,12 +99,11 @@ Unregister-ScheduledTask NaukriProfileRefresh     # remove task
 
 > Verify in Windows PowerShell: `LastTaskResult : 0` means the last run was successful.
 
-```text
+```powershell
 LastRunTime        : 03-08-2026 12:36:06 AM
 LastTaskResult     : 0
 NextRunTime        : 03-08-2026 01:36:05 AM
 NumberOfMissedRuns : 0
-TaskName           : NaukriProfileRefresh
 ```
 
 ## 🚨 Troubleshooting
