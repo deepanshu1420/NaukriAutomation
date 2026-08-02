@@ -42,7 +42,7 @@ EMAIL=you@gmail.com
 
 ### 3️⃣ First Login (One-Time Setup)
 
-> Run the below command in your IDE's terminal (e.g., VS Code):
+> Run the below command in your IDE's terminal (e.g., Visual Studio Code):
 
 ```bash
 node naukri-profile-refresh.js login
