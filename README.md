@@ -25,7 +25,7 @@ profile update on Naukri. Schedule it hourly and forget about updating your prof
 
 - Windows 10/11 (uses `Task Scheduler` for the hourly run)
 - Node.js v18+
-- Stay signed in to your Windows account
+- A Windows user account that stays signed in
 - Google Chrome installed
 - A Naukri account that signs in with Google
 - An active internet connection
