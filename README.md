@@ -20,7 +20,7 @@ profile update on Naukri. Schedule it hourly and forget about it.
 
 ## Setup & Installation
 
-### 1️⃣ Clone and install
+### 1️⃣ Clone the repository & Install the required dependencies
 
 ```bash
 https://github.com/deepanshu1420/NaukriAutomation.git
@@ -28,17 +28,17 @@ cd NaukriAutomation
 npm install
 ```
 
-### 2️⃣ Open the `.env.example` file, fill in the required details below, then rename it to `.env`.
+### 2️⃣ Open `.env.example` file, fill the required details below, then rename it to `.env`
+
+> `.env` is git-ignored, so your credentials never get pushed.
 
 | Variable | What it is ? |
 |---|---|
-| `GOOGLE_EMAIL` | The Google account your Naukri profile uses |
+| `GOOGLE_EMAIL` | The Google account your Naukri profile uses. |
 | `GOOGLE_PASSWORD` | Its password (used only for the automated sign-in) |
-| `NAUKRI_PROFILE_URL` | Your Naukri profile URL the default `https://www.naukri.com/mnjuser/profile` works for every account |
+| `NAUKRI_PROFILE_URL` | Your Naukri profile URL the default `https://www.naukri.com/mnjuser/profile` works for every account. |
 | `NAME` | Your full name (used for configuration validation) |
 | `EMAIL` | Your email address (used for configuration validation) |
-
-> `.env` is git-ignored, so your credentials never get pushed.
 
 ### 3️⃣ First login (one time, visible browser)
 
