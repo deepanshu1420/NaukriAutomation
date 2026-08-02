@@ -75,7 +75,7 @@ node naukri-profile-refresh.js
 
 ### 5️⃣ Run it hourly (Task Scheduler)
 
-> Open "Windows PowerShell" as Administrator, replace `C:\path\to\NaukriAutomation` with your project path, then run the entire command block below.
+> Open "Windows PowerShell" as Administrator, replace `C:\path\to\NaukriAutomation` with your project path, then run the entire command below at once.
 
 ```powershell
 $repo = "C:\path\to\NaukriAutomation"
