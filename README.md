@@ -88,7 +88,7 @@ Register-ScheduledTask -TaskName "NaukriProfileRefresh" -Action $action -Trigger
 
 > Useful Commands:
 
-```powershell
+```text
 Get-ScheduledTaskInfo NaukriProfileRefresh        # check last run status
 Get-ScheduledTask NaukriProfileRefresh            # view task
 Start-ScheduledTask NaukriProfileRefresh          # run task now
