@@ -1,32 +1,32 @@
 # Naukri Profile Refresh
 
-Keeps your Naukri profile "recently updated" — recruiters see fresh profiles first.
+Keeps your Naukri profile "recently updated" - recruiters see fresh profiles first.
 Every run it toggles a trailing `.` on your **resume headline**, which counts as a
 profile update on Naukri. Schedule it hourly and forget about it.
 
 - Logs in automatically with your **Google account** (session is saved after the first login).
 - Runs in an off-screen Chrome window (Naukri blocks headless browsers).
 - Verifies the save actually stuck on the server before reporting success.
-- All personal data lives in `.env` — nothing sensitive is in the code.
+- All personal data lives in `.env` - nothing sensitive is in the code.
 
 ## Requirements
 
-- Windows 10/11 (uses Task Scheduler for the hourly run)
-- [Node.js](https://nodejs.org/) 18+
+- Windows 10/11 (uses `Task Scheduler` for the hourly run)
+- Node.js v18+
 - Google Chrome installed
 - A Naukri account that signs in with Google
 
 ## Setup
 
-**1. Clone and install:**
+### 1️⃣ Clone and install
 
-```powershell
-git clone https://github.com/ankitbaghel01/naukri_update.git
-cd naukri_update
+```bash
+https://github.com/deepanshu1420/NaukriAutomation.git
+cd NaukriAutomation
 npm install
 ```
 
-**2. Create your `.env`:**
+### 2️⃣ Create your `.env`
 
 ```powershell
 copy .env.example .env
@@ -42,7 +42,7 @@ Open `.env` and fill in at least:
 
 `.env` is git-ignored, so your credentials never get pushed.
 
-**3. First login (one time, visible browser):**
+### 3️⃣ First login (one time, visible browser)
 
 ```powershell
 node naukri-profile-refresh.js login
@@ -52,7 +52,7 @@ A Chrome window opens and signs in with Google. If Google asks for 2-step
 verification, approve it once — the session is saved to `.naukri-chrome-profile/`
 and reused by every later run.
 
-**4. Test a silent run:**
+### 4️⃣ Test a silent run
 
 ```powershell
 node naukri-profile-refresh.js
