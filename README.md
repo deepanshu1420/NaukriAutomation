@@ -57,7 +57,7 @@ node naukri-profile-refresh.js login
 node naukri-profile-refresh.js
 ```
 
-> Check your terminal or `naukri-refresh.log` - you should see a line like:
+> Check your terminal or `naukri-refresh.log`, you should see a line like:
 
 ```
 [27/7/2026, 1:05:12 pm] OK: headline dot added (verified) → "Software Developer | ..."
