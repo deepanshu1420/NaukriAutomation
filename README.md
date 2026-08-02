@@ -30,7 +30,7 @@ npm install
 
 ### 2️⃣ Open the `.env.example` file, fill in the required details below, then rename it to `.env`.
 
-| Variable | What it is |
+| Variable | What it is? |
 |---|---|
 | `GOOGLE_EMAIL` | The Google account your Naukri profile uses |
 | `GOOGLE_PASSWORD` | Its password (used only for the automated sign-in) |
