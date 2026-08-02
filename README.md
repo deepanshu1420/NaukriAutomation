@@ -97,7 +97,7 @@ Enable-ScheduledTask NaukriProfileRefresh         # resume task
 Unregister-ScheduledTask NaukriProfileRefresh     # remove task
 ```
 
-> Verify in PowerShell: `LastTaskResult : 0` means the last run was successful.
+> Verify in Windows PowerShell: `LastTaskResult : 0` means the last run was successful.
 
 ```powershell
 LastRunTime        : 03-08-2026 12:36:06 AM
