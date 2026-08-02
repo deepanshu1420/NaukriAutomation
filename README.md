@@ -32,13 +32,13 @@ npm install
 
 > `.env` is git-ignored, so your credentials never get pushed.
 
-| Variable | What it is ? |
-|---|---|
-| `GOOGLE_EMAIL` | you@gmail.com |
-| `GOOGLE_PASSWORD` | your-google-password |
-| `NAUKRI_PROFILE_URL` | https://www.naukri.com/mnjuser/profile (works for every account, no need to change) |
-| `NAME` | Your Name |
-| `EMAIL` | you@gmail.com |
+```env
+GOOGLE_EMAIL=you@gmail.com
+GOOGLE_PASSWORD=your-google-password
+NAUKRI_PROFILE_URL=https://www.naukri.com/mnjuser/profile
+NAME=Your Name
+EMAIL=you@gmail.com
+```
 
 ### 3️⃣ First Login (One-Time Setup)
 
